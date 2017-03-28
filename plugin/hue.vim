@@ -33,3 +33,24 @@ cmd = "vnew | r ! hue " + light + brightness
 vim.command(cmd)
 EOF
 endfunc
+
+
+function HueColor()
+let light = input("Light Name:  or lights for all")
+let color = input("color: red,yellow etc, or hex value(ff0000)")
+python << EOF
+light = vim.eval("light")
+color = vim.eval("color")
+cmd = "vnew | r ! hue " + light + " " + color
+vim.command(cmd)
+
+EOF
+endfunc
+
+
+
+
+
+
+
+
