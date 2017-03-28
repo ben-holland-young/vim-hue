@@ -47,7 +47,11 @@ vim.command(cmd)
 EOF
 endfunc
 
-
+map <leader>lh :call ListHue()<cr>
+map <leader>ho :call HueOn()<cr>
+map <leader>hf :call HueOff()<cr>
+map <leader>hb :call HueBrightness()<cr>
+map <leader>hc :call HueColor()<cr>
 
 
 
